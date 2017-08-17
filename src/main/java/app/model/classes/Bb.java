@@ -1,23 +1,21 @@
-package app.model;
-
-import org.hibernate.annotations.Cascade;
+package app.model.classes;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
-public class A {
+public class Bb {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private B b;
+    private Aa aa;
 
-    public A(){}
+    public Bb(){}
 
-    public A(B b) {
-        this.b = b;
+    public Bb(Aa aa) {
+        this.aa = aa;
     }
 
     public Long getId() {
@@ -28,12 +26,11 @@ public class A {
         this.id = id;
     }
 
-    public B getB() {
-        return b;
+    public Aa getAa() {
+        return aa;
     }
 
-    public void setB(B b) {
-        this.b = b;
+    public void setAa(Aa aa) {
+        this.aa = aa;
     }
-
 }

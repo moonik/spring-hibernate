@@ -1,14 +1,17 @@
-package app.model;
+package app.model.classes;
 
 import javax.persistence.*;
 
 @Entity
-public class B {
+public class Bbb {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    public Long id;
 
-    public B(){}
+    public Bbb(){
+
+    }
 
     public Long getId() {
         return id;

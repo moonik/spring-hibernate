@@ -1,10 +1,10 @@
-package Tests;
+package Tests.classes;
 
 import app.Application;
-import app.model.Aaa;
-import app.model.Bbb;
-import app.repository.AaaClassRepository;
-import app.repository.BbbClassRepository;
+import app.model.classes.Aaa;
+import app.model.classes.Bbb;
+import app.repository.classes.AaaClassRepository;
+import app.repository.classes.BbbClassRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;

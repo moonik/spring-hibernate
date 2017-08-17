@@ -1,4 +1,4 @@
-package app.model;
+package app.model.classes;
 
 import app.converter.ColorConverter;
 import app.converter.LocalDateToDateConverter;

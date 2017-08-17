@@ -1,10 +1,10 @@
-package Tests;
+package Tests.classes;
 
 import app.Application;
-import app.model.A;
-import app.model.B;
-import app.repository.AclassRepository;
-import app.repository.BclassRepository;
+import app.model.classes.A;
+import app.model.classes.B;
+import app.repository.classes.AclassRepository;
+import app.repository.classes.BclassRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -21,7 +21,7 @@ public class AClassTests extends AbstractTestNGSpringContextTests {
     private BclassRepository bclassRepository;
 
     @Test
-    public void shouldSaveATest(){
+    public void shouldSaveAtest(){
         //given
         A a = new A();
         B b = new B();

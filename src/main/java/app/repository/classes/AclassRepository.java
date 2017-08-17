@@ -1,6 +1,6 @@
-package app.repository;
+package app.repository.classes;
 
-import app.model.A;
+import app.model.classes.A;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

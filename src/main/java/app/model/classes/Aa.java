@@ -1,21 +1,22 @@
-package app.model;
+package app.model.classes;
 
 import javax.persistence.*;
 
 @Entity
-public class Bb {
+public class Aa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Aa aa;
+    private Bb bb;
 
-    public Bb(){}
+    public Aa() {
+    }
 
-    public Bb(Aa aa) {
-        this.aa = aa;
+    public Aa(Bb bb) {
+        this.bb = bb;
     }
 
     public Long getId() {
@@ -26,11 +27,11 @@ public class Bb {
         this.id = id;
     }
 
-    public Aa getAa() {
-        return aa;
+    public Bb getBb() {
+        return bb;
     }
 
-    public void setAa(Aa aa) {
-        this.aa = aa;
+    public void setBb(Bb bb) {
+        this.bb = bb;
     }
 }

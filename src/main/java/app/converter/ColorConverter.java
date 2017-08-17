@@ -1,6 +1,6 @@
 package app.converter;
 
-import app.model.Color;
+import app.model.classes.Color;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
