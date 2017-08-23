@@ -10,7 +10,7 @@ public class Aaa {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Bbb> bbb;
 
     public Aaa(){}

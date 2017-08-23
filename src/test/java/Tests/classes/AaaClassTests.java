@@ -36,11 +36,10 @@ public class AaaClassTests extends AbstractTestNGSpringContextTests{
 
         //then
         Assert.assertNotNull(bbbList);
-        Assert.assertEquals(bbbList.size(), 1);
+        Assert.assertEquals(bbbList.size(), 2);
     }
 
     public void saveAaa(){
-        Aaa aaa = new Aaa();
-        aaaClassRepository.save(aaa);
+        aaaClassRepository.save(new Aaa());
     }
 }
